@@ -1,0 +1,54 @@
+<!-- TP3
+    Profesor: Luis Amarilla
+    Alumno: Luis Ariel Renyinski
+    PLATAFORMA: POTRERO DIGITAL -->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/main.css" rel="stylesheet">
+        <title>login</title>
+    </head>
+    <body>
+        <!--Seccion en donde esta incluido todo el Login del formulario-->
+        <section class="seccionFormulario">
+            <!--Imagen PNG del logotipo POTRERO DIGITAL-->
+            <img src="img/logo.png" alt="Potrero digital">
+            <!--Formulario integrado por dos casillas de ingreso de datos (Admin y pass) y el boton (Acceder)-->
+            <form action="./php/login.php" method="post">
+                <input type="text" name="user" value="" class="formUserPass" placeholder="Nombre de usuario o correo electrónico">
+                <input type="password" name="pass" value=""  class="formUserPass" placeholder="Contraseña">
+                <input type="submit" name="" value="Acceder" class="botonAcceder">
+            </form>
+            <!--Fin del formulario de Acceso-->
+            <h2 class="olvidopass">¿Olvidó su contraseña?</h2>
+            <!--Seccion de acceso para invitados-->
+            <section class="seccionInvitados">
+                <h2 class="H2AccesoInvitados">Algunos cursos permiten el acceso de invitados</h2>
+                <!--Formulario integrado por un boton de acceso a la pagina ofical de potrero, a la seccion ACCESO PARA INVITADOS-->
+                <form action="https://edu.potrerodigital.org/enrol/index.php?id=34" method="post">
+                    <input type="submit" name="" value="Entrar como persona invitada" class="botonInvitado">
+                </form>
+                <!--Fin del formulario Acceso para invitados-->
+            </section>
+            <!--Fin de seccion .seccionInvitados-->
+            <!--Seccion  integrada por el Select de idiomas y el boton que redirige por el metodo POST a "cookies.html"-->
+            <section class="idiomaCookies">
+                <select name="idioma" id="idiomas" class="opcionesIdioma">
+                    <option value="EspaniolInternacional">Español - Internacional (es) </option>
+                    <option value="English">English (en)</option>
+                    <option value="EspaniolArg">Español - Argentina (es_ar)</option>
+                    <option value="Espaniol">Español - Internacional (es)</option>
+                </select>
+                <!--Formulario integrado por el boton (Aviso de Cookies) redirige a la pagina "cookies.html"-->
+                <form action="cookies.html" method="post" >
+                    <input type="submit" name="cookies" value="Aviso de Cookies" class="botonCookies">
+                </form>
+                <!--Fin del formulario cookies.html-->
+            </section>
+            <!--Fin seccion .idiomaCookies-->
+        </section>
+        <!--FIN Seccion .seccionFormulario-->
+    </body>
+</html>

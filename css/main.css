@@ -1,0 +1,331 @@
+/*
+TP3
+    Profesor: Luis Amarilla
+    Alumno: Luis Ariel Renyinski
+    PLATAFORMA: POTRERO DIGITAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/********Estilos login.html********/
+body{
+    background: #0e0e11;
+}
+body::-webkit-scrollbar{ /*Estilo barra scroollbar*/
+    background: #312119;
+}
+body::-webkit-scrollbar-thumb{ /*Estilos barra scroollbar*/
+    background: #5b4333;  
+    border-radius: 8px;      
+}
+.seccionFormulario{
+    margin: 3em auto;
+    background: #18181b;
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #27272a;
+}
+img { /*Logo Potrero*/
+    width: 85%;
+    margin: 3em auto 1.5em;
+}
+.formUserPass{ /*Estilos casilla de ingreso y contraseña*/
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 1rem;
+    width: 30rem;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    padding: 1.2em;
+    font-size: 18px;
+    border: 1px solid #5b4333;
+    background: #312119;
+    color: #f2ede2;
+}
+
+.formUserPass:focus{ /*Foco al hacer click en las casillas Ingreso o contraseña*/
+    border: 1px solid #5b4333;
+}
+.botonAcceder{ 
+    color: #e4d9c4;
+    font-size: 16px;
+    padding:.8em 1em;
+    border-radius: 8px;
+    border: 1px solid #70503c;
+    margin-bottom: 1em;
+    margin-left: 2.5em;
+    background: #8a6244;
+}
+.botonAcceder:hover{
+    background: #a67950;
+}
+.olvidopass{ /*texto: ¿Olvidó su contraseña?*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #e4d9c4;
+    padding-bottom: 1em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    border-bottom: 1px solid #5b4333;
+}
+/**************************************/
+/****Seccion Acceso para Invitados*****/
+.seccionInvitados{
+    border-bottom: 1px solid #5b4333;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}
+.H2AccesoInvitados{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e4d9c4;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+.botonInvitado{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #a67950;
+    padding: .6em;
+    border-radius: 8px;
+    border: 1px solid #a67950;
+    margin-bottom: 1.5em;
+    background: #18181b;
+}
+.botonInvitado:hover{
+    color: #8a6244;
+    border: 1px solid #8a6244;
+}
+/****Fin Seccion Acceso para Invitados*****/
+/******************************************/
+/*****Seccion Elegir idioma y cookies******/
+.idiomaCookies{
+    display: flex;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+}
+.opcionesIdioma{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    background: #18181b;
+    border: none;
+    font-size: 16px;
+    margin-left: 2.5em;
+    color: #5b4333;
+}
+option{
+    font-size: 16px;
+    color: #e4d9c4;
+    border-radius: 8px;
+}
+.botonCookies{
+    font-size: 16px;
+    font-weight: 500;
+    color: #a67950;
+    padding: .6em;
+    border-radius: 8px;
+    border: 1px solid #a67950;
+    background: #18181b;
+    margin-left: 2em;
+}
+.botonCookies:hover{
+    color: #8a6244;
+    border: 1px solid #8a6244;
+}
+/*Fin Seccion Elegir idioma y cookies**/
+/********Fin Estilos login.html********/
+/**************************************/
+/* Estilos Pagina ERROR*/
+.bodyError{
+    background: #000;
+    display: flex;
+    flex-direction: column;
+}
+.error404{
+    margin: 0 auto ;
+    display: flex;
+    width: 35em;
+}
+.logoError{
+    width: 100%;
+    padding-top: 1em;
+    margin-bottom: 0;
+    padding-top: 3em;
+}
+.h2Error{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: .5em;
+    letter-spacing: 2px;
+}
+.pError{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.robot{
+    width: 40%;
+}
+.botonVolverError{
+    font-size: 24px;
+    padding: .5em;
+    border-radius: 8px;
+    background: #0a0a0a;
+    color: rgb(211, 217, 59);
+    margin-left: 40%;
+    border: 2px solid rgb(211, 217, 59);
+    box-shadow: 0px 0px 3px rgb(211, 217, 59);
+}
+.botonVolverError:hover{
+    border: 2px solid rgb(94 157 211);
+    box-shadow: 0px 0px 3px rgb(94 157 211);
+    color: #fff;
+}
+/*Fin Estilos Pagina ERROR*/
+/**************************/
+/*****Estilos Cookies******/
+
+.seccionCookies{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    border: 1px solid #27272a;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.headerCookies{
+    position: static;
+    background: #18181b;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.h2Cookies{
+    color: #f2ede2;
+    font-size: 18px;
+    font-weight: 600;
+    padding: .7em 1em;
+    border-bottom: 1px solid #5b4333;
+    line-height: 1.5;
+}
+.seccionParrafos{
+    overflow-y: scroll;
+    height: 13em;
+    background: #0e0e11;
+    color: #f9f7f3;
+    border-bottom: 1px solid #5b4333;
+}
+.seccionParrafos::-webkit-scrollbar{ /*Estilo barra scroollbar*/
+    background: #312119;
+}
+.seccionParrafos::-webkit-scrollbar-thumb{ /*Estilos barra scroollbar*/
+    background: #5b4333;  
+    border-radius: 8px;      
+}
+.pCookies{
+    font-weight: 400;
+    font-size: 16px;
+    padding: .5em 1em;
+    line-height: 1.5em; 
+    color: #e4d9c4;
+}
+.pCookies:first-child {
+    padding-top: 1em;
+}
+.pCookies:last-child{
+    padding-bottom: 1em;
+}
+.formCookies{
+    display: flex;
+    justify-content: flex-end;
+    background: #18181b;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.botonCookiesOK{
+    background: #8a6244;
+    font-size: 16px;
+    color: #e4d9c4;
+    padding: .5em;
+    border-radius: 8px;
+    margin: 1em;
+    border: 1px solid #70503c;
+}
+.botonCookiesOK:hover{
+    background: #a67950;
+}
+/*****Fin Estilos Cookies******/
+/***************************ESTILOS CELULAR****************************************/
+@media screen and (max-width: 575px){
+    /*Estilos Pagina login*/
+    .seccionFormulario{
+        margin-bottom: 3em;
+    }
+    /*fin Estilos Pagina login*/
+    /*****************/
+    /* Estilos Pagina ERROR*/
+    .bodyError{
+        background: #000;
+    }
+    .error404{
+        margin: 1em auto;
+        width: 25em;
+        display: block;
+    }
+    .logoError{
+        width: 100%;
+        padding-top: .4em;
+        margin-top: .4em;
+        margin-bottom: 0;
+    }
+    .h2Error{
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: .5em;
+        margin-left: 1.5em;
+    }
+    .pError{
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .robot{
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    .botonVolverError{
+        font-size: 20px;
+        border-radius: 8px;
+        background: #0a0a0a;
+        color: rgb(211, 217, 59);
+        border: 2px solid rgb(211, 217, 59);
+        box-shadow: 0px 0px 3px rgb(211, 217, 59);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3em;
+    }
+    .botonVolverError:hover{
+        border: 2px solid rgb(94 157 211);
+        box-shadow: 0px 0px 3px rgb(94 157 211);
+        color: #fff;
+    }
+    /*Estilos Pagina Cookies*/
+    .seccionCookies{
+        margin-bottom: 3em;
+    }
+}
